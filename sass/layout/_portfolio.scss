@@ -1,0 +1,124 @@
+.types-of-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--portfolio-background-color);
+}
+
+.types-of-projects__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.types-of-projects__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.types-of-projects__btn {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--types-of-projects__btn-color);
+  background-color: var(--types-of-projects__btn-background-color);
+  cursor: var(--cursor-button);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms var(--animation), color 250ms var(--animation),
+    box-shadow 250ms var(--animation);
+}
+
+.types-of-projects__btn:hover,
+.types-of-projects__btn:focus,
+.painted {
+  background-color: var(--types-of-projects__btn-hover-focus-background-color);
+  color: var(--types-of-projects__btn-hover-focus-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.project-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.project-item {
+  display: block;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: var(--cursor-button);
+}
+
+.project-link {
+  transition: box-shadow 250ms var(--animation);
+}
+
+.project-item-container {
+  box-sizing: border-box;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
+.project-top-text {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-bottom-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.project-hover-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transform: translateY(101%);
+  transition: transform 250ms var(--animation);
+}
+
+.project-link:hover .project-hover-text {
+  transform: translateY(0);
+  overflow: auto;
+}
+.project-link:focus .project-hover-text {
+  transform: translateY(0);
+  overflow: auto;
+}
+
+.project-hover-container {
+  position: relative;
+  overflow: hidden;
+}
