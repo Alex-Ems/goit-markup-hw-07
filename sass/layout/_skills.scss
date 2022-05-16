@@ -1,3 +1,7 @@
+.skills {
+  padding-bottom: 94px;
+}
+
 .skills__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -8,20 +12,16 @@
   color: var(--skills__title-color);
 }
 
-.skills {
-  padding-bottom: 94px;
-}
 .skills__list {
   display: flex;
 }
 
-.skills__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .skills__item {
   position: relative;
+  &:not(:last-child) {
+  margin-right: 30px;}
 }
+
 .skills__container-text {
   width: 370px;
   height: 70px;

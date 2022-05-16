@@ -1,6 +1,7 @@
 .qualities {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--qualities-skills-background-color);
 }
 .qualities__list {
   display: flex;
@@ -19,15 +20,6 @@
 
 .qualities__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.qualities__item {
-  /* outline: 2px solid red; */
-}
-
-.qualities,
-.skills {
-  background-color: var(--qualities-skills-background-color);
 }
 
 .qualities__top-text {

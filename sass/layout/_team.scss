@@ -8,15 +8,14 @@
   display: flex;
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team__item {
   background-color: var(--team__item-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+  margin-right: 30px;}
 }
 
 .team__title {
@@ -43,40 +42,6 @@
   color: var(--specialist__team-member-color);
 }
 
-.specialist__social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.specialist__social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-}
-
-.specialist__social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.specialist__social-link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: #afb1b8;
-}
-.specialist__social-link:hover,
-.specialist__social-link:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-.specialist__social-icon {
-  fill: currentColor;
-}
 
 .specialist__tech-skill {
   font-weight: 400;
@@ -87,3 +52,4 @@
   color: var(--specialist__tech-skill-color);
   margin-bottom: 16px;
 }
+
